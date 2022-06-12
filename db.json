@@ -1,0 +1,88 @@
+{
+  "shops": [
+    {
+      "id": 1,
+      "name": "Smart Collections",
+      "category": "Baker",
+      "area": "Mumbai",
+      "open": "2022-05-30",
+      "close": "2022-06-11"
+    },
+    {
+      "id": 2,
+      "name": "Food Collections",
+      "category": "Baker",
+      "area": "Pune",
+      "open": "2021-11-02",
+      "close": "2022-03-21"
+    },
+    {
+      "id": 3,
+      "name": "Electronics Collections",
+      "category": "Chemist",
+      "area": "Mumbai",
+      "open": "2022-06-01",
+      "close": "2022-06-09"
+    },
+    {
+      "id": 4,
+      "name": "hdhdgfbch",
+      "category": "Chemist",
+      "area": "Thane",
+      "open": "2022-06-03",
+      "close": "2022-06-12"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Grocery"
+    },
+    {
+      "id": 2,
+      "name": "Butcher"
+    },
+    {
+      "id": 3,
+      "name": "Baker"
+    },
+    {
+      "id": 4,
+      "name": "Chemist"
+    },
+    {
+      "id": 5,
+      "name": "Stationary shop"
+    }
+  ],
+  "areas": [
+    {
+      "id": 1,
+      "name": "Thane"
+    },
+    {
+      "id": 2,
+      "name": "Pune"
+    },
+    {
+      "id": 3,
+      "name": "Mumbai Suburban"
+    },
+    {
+      "id": 4,
+      "name": "Nashik"
+    },
+    {
+      "id": 5,
+      "name": "Nagpur"
+    },
+    {
+      "id": 6,
+      "name": "Ahmednagar"
+    },
+    {
+      "id": 7,
+      "name": "Solapur"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+export const GET_SHOPS = 'GET_SHOPS';
+export const ADD_SHOP = 'ADD_SHOP';
+export const DELETE_SHOP = 'DELETE_SHOP';
+export const SET_CURRENT = 'SET_CURRENT';
+export const CLEAR_CURRENT = 'CLEAR_CURRENT';
+export const UPDATE_SHOP = 'UPDATE_SHOP';
+export const CLEAR_SHOPS = 'CLEAR_SHOPS';
+export const SET_LOADING = 'SET_LOADING';
+export const SHOPS_ERROR = 'SHOPS_ERROR';
+export const SEARCH_SHOPS = 'SEARCH_SHOPS';
