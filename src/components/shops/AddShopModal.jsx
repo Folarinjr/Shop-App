@@ -8,12 +8,17 @@ const AddShopModal = ({ addShop}) => {
     const [name, setName] = useState('');
     const [category, setCategory] = useState('');
     const [area, setArea] = useState('');
-    const [open, setOpen] = useState(new Date().toLocaleString());
-    const [close, setClose] = useState(new Date().toLocaleString());
+    const [open, setOpen] = useState(new Date().getTime());
+    const [close, setClose] = useState(new Date().getTime());
 
     const onSubmit = (e) => {
-        if(name === '' || area === ''){
-            M.toast({ html: 'Name field must not be empty'})
+        //Form vallidation
+        const letters = /^[A-Za-z]+$/;
+
+        if(name === '' && !letters.test(name)){
+            M.toast({ html: 'Name field should be alphabet'});
+        } else if(open >= close){
+            M.toast({ html: 'Shop must not close before opening'});  
         } else {
             const newShop = {
                 name,

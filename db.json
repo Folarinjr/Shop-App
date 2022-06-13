@@ -15,22 +15,6 @@
       "area": "Pune",
       "open": "2021-11-02",
       "close": "2022-03-21"
-    },
-    {
-      "id": 3,
-      "name": "Electronics Collections",
-      "category": "Chemist",
-      "area": "Mumbai",
-      "open": "2022-06-01",
-      "close": "2022-06-09"
-    },
-    {
-      "id": 4,
-      "name": "hdhdgfbch",
-      "category": "Chemist",
-      "area": "Thane",
-      "open": "2022-06-03",
-      "close": "2022-06-12"
     }
   ],
   "categories": [

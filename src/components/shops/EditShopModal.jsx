@@ -8,8 +8,8 @@ const EditShopModal = ({updateShop, current}) => {
     const [name, setName] = useState('');
     const [category, setCategory] = useState('');
     const [area, setArea] = useState('');
-    const [open, setOpen] = useState(new Date().toLocaleString());
-    const [close, setClose] = useState(new Date().toLocaleString());
+    const [open, setOpen] = useState(new Date().getTime());
+    const [close, setClose] = useState(new Date().getTime());
 
     useEffect(()=>{
         if(current){
@@ -21,10 +21,33 @@ const EditShopModal = ({updateShop, current}) => {
         }
     }, [current])
 
+    
+
     const onSubmit = () => {
-       if(name === '' || area === ''){
-           M.toast({ html: 'Name field must not be empty'})
-       } else {
+       validateForm();
+
+       //clear fields
+       setName('');
+       setCategory('');
+       setArea('');
+       setOpen('');
+       setClose('');
+    }
+
+    const validateForm = () => {
+        //Form vallidation
+       const letters = /^[a-zA-Z]+$/g;
+
+       if(!letters.test(name)){
+           M.toast({ html: 'Name field should be alphabet'});
+       } else if(name === ''){
+           M.toast({ html: 'Name field should be contain characters'});
+       }
+
+       if(open >= close){
+            M.toast({ html: 'Shop must not close before opening'}); 
+        }  
+       else {
            const updShop = {
                id: current.id,
                name,
@@ -35,13 +58,6 @@ const EditShopModal = ({updateShop, current}) => {
            }
 
            updateShop(updShop);
-           
-           //clear fields
-           setName('');
-           setCategory('');
-           setArea('');
-           setOpen('');
-           setClose('');
        }
     }
 
